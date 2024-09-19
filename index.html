@@ -3,49 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work in Progress</title>
+    <title>lassjammen security</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a;
+            font-family: 'Verdana', sans-serif;
+            color: #e0e0e0;
+            overflow: hidden;
+            position: relative;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
+
+        .container {
             text-align: center;
+            background: rgba(30, 30, 30, 0.9);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.8s ease-in-out;
         }
-        main {
-            margin: 20px 0;
-            padding: 20px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00bcd4;
+            animation: slideIn 0.6s forwards;
+            opacity: 0;
+            animation-delay: 0.3s;
         }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #a0a0a0;
+            animation: slideIn 0.6s forwards;
+            opacity: 0;
+            animation-delay: 0.6s;
+        }
+
+        .emoji {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+
         footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
             text-align: center;
-            margin-top: 20px;
-            font-size: 0.8em;
-            color: #777;
+            color: #a0a0a0;
+            font-size: 0.9em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .emoji {
+                font-size: 3em;
+            }
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Work in Progress</h1>
-</header>
-
-<main>
-    <h2>Coming Soon!</h2>
-    <p>This page is currently under construction. Please check back later for updates.</p>
-</main>
-
-<footer>
-    <p>&copy; 2024 some random dude. All rights reserved.</p>
-</footer>
-
+    <div class="container">
+        <h1>Your cybersecurity experts are currently building something...</h1>        
+		<h1>Stay tuned!</h1>
+        <div class="emoji">⏳</div>
+    </div>
+    
+    <footer>
+        &copy; 2024 lassjammen security. All Rights Reserved.
+    </footer>
 </body>
 </html>
